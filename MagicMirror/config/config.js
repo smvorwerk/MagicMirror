@@ -7,6 +7,7 @@
  * See https://github.com/MichMich/MagicMirror#configuration
  *
  * github testing_20210211
+ * testingsd
  */
 
 var config = {
