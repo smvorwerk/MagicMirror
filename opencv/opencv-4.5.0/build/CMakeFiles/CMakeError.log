@@ -1,0 +1,486 @@
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C\+\+'
+    Output line: 'cc1plus: warning: command line option ‘-Wmissing-prototypes’ is valid for C/ObjC but not for C++'
+Compilation failed:
+    source file: '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations  -Wmissing-prototypes'
+===== BUILD LOG =====
+Change Dir: /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_04b1b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_04b1b.dir/build.make CMakeFiles/cmTC_04b1b.dir/build
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 들어감
+Building CXX object CMakeFiles/cmTC_04b1b.dir/src.cxx.o
+/usr/bin/c++    -O3 -DNDEBUG -fPIE   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -std=c++11 -o CMakeFiles/cmTC_04b1b.dir/src.cxx.o -c /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: warning: command line option ‘-Wmissing-prototypes’ is valid for C/ObjC but not for C++
+/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+Linking CXX executable cmTC_04b1b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04b1b.dir/link.txt --verbose=1
+/usr/bin/c++    -O3 -DNDEBUG    CMakeFiles/cmTC_04b1b.dir/src.cxx.o  -o cmTC_04b1b 
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 나감
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C\+\+'
+    Output line: 'cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++'
+Compilation failed:
+    source file: '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations  -Wstrict-prototypes'
+===== BUILD LOG =====
+Change Dir: /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f8ee4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f8ee4.dir/build.make CMakeFiles/cmTC_f8ee4.dir/build
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 들어감
+Building CXX object CMakeFiles/cmTC_f8ee4.dir/src.cxx.o
+/usr/bin/c++    -O3 -DNDEBUG -fPIE   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wstrict-prototypes -std=c++11 -o CMakeFiles/cmTC_f8ee4.dir/src.cxx.o -c /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+Linking CXX executable cmTC_f8ee4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8ee4.dir/link.txt --verbose=1
+/usr/bin/c++    -O3 -DNDEBUG    CMakeFiles/cmTC_f8ee4.dir/src.cxx.o  -o cmTC_f8ee4 
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 나감
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C'
+    Output line: 'cc1: warning: command line option ‘-Wsign-promo’ is valid for C++/ObjC++ but not for C'
+Compilation failed:
+    source file: '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow  -Wsign-promo'
+===== BUILD LOG =====
+Change Dir: /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_03e2a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_03e2a.dir/build.make CMakeFiles/cmTC_03e2a.dir/build
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 들어감
+Building C object CMakeFiles/cmTC_03e2a.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG -fPIE   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -o CMakeFiles/cmTC_03e2a.dir/src.c.o   -c /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command line option ‘-Wsign-promo’ is valid for C++/ObjC++ but not for C
+/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+Linking C executable cmTC_03e2a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03e2a.dir/link.txt --verbose=1
+/usr/bin/cc   -O3 -DNDEBUG    CMakeFiles/cmTC_03e2a.dir/src.c.o  -o cmTC_03e2a 
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 나감
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C'
+    Output line: 'cc1: warning: command line option ‘-Wsuggest-override’ is valid for C++/ObjC++ but not for C'
+Compilation failed:
+    source file: '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self  -Wsuggest-override'
+===== BUILD LOG =====
+Change Dir: /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7c62f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7c62f.dir/build.make CMakeFiles/cmTC_7c62f.dir/build
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 들어감
+Building C object CMakeFiles/cmTC_7c62f.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG -fPIE   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wsuggest-override -o CMakeFiles/cmTC_7c62f.dir/src.c.o   -c /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command line option ‘-Wsuggest-override’ is valid for C++/ObjC++ but not for C
+/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+Linking C executable cmTC_7c62f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c62f.dir/link.txt --verbose=1
+/usr/bin/cc   -O3 -DNDEBUG    CMakeFiles/cmTC_7c62f.dir/src.c.o  -o cmTC_7c62f 
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 나감
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C'
+    Output line: 'cc1: warning: command line option ‘-Wno-delete-non-virtual-dtor’ is valid for C++/ObjC++ but not for C'
+Compilation failed:
+    source file: '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self  -Wno-delete-non-virtual-dtor'
+===== BUILD LOG =====
+Change Dir: /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a4963/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a4963.dir/build.make CMakeFiles/cmTC_a4963.dir/build
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 들어감
+Building C object CMakeFiles/cmTC_a4963.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG -fPIE   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-delete-non-virtual-dtor -o CMakeFiles/cmTC_a4963.dir/src.c.o   -c /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command line option ‘-Wno-delete-non-virtual-dtor’ is valid for C++/ObjC++ but not for C
+/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+Linking C executable cmTC_a4963
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4963.dir/link.txt --verbose=1
+/usr/bin/cc   -O3 -DNDEBUG    CMakeFiles/cmTC_a4963.dir/src.c.o  -o cmTC_a4963 
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 나감
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option ‘-Wno-unnamed-type-template-args’'
+Compilation failed:
+    source file: '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor  -Wno-unnamed-type-template-args'
+===== BUILD LOG =====
+Change Dir: /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a8c4a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a8c4a.dir/build.make CMakeFiles/cmTC_a8c4a.dir/build
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 들어감
+Building CXX object CMakeFiles/cmTC_a8c4a.dir/src.cxx.o
+/usr/bin/c++    -O3 -DNDEBUG -fPIE   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -std=c++11 -o CMakeFiles/cmTC_a8c4a.dir/src.cxx.o -c /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx
+/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+cc1plus: warning: unrecognized command line option ‘-Wno-unnamed-type-template-args’
+Linking CXX executable cmTC_a8c4a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8c4a.dir/link.txt --verbose=1
+/usr/bin/c++    -O3 -DNDEBUG    CMakeFiles/cmTC_a8c4a.dir/src.cxx.o  -o cmTC_a8c4a 
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 나감
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1: warning: unrecognized command line option ‘-Wno-unnamed-type-template-args’'
+Compilation failed:
+    source file: '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self  -Wno-unnamed-type-template-args'
+===== BUILD LOG =====
+Change Dir: /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a398c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a398c.dir/build.make CMakeFiles/cmTC_a398c.dir/build
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 들어감
+Building C object CMakeFiles/cmTC_a398c.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG -fPIE   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-unnamed-type-template-args -o CMakeFiles/cmTC_a398c.dir/src.c.o   -c /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c
+/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+cc1: warning: unrecognized command line option ‘-Wno-unnamed-type-template-args’
+Linking C executable cmTC_a398c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a398c.dir/link.txt --verbose=1
+/usr/bin/cc   -O3 -DNDEBUG    CMakeFiles/cmTC_a398c.dir/src.c.o  -o cmTC_a398c 
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 나감
+
+===== END =====
+
+Compilation failed:
+    source file: '/home/pi/SmartMirror/opencv/opencv-4.5.0/cmake/checks/cpu_neon.cpp'
+    check option: ' -mfpu=vfpv3'
+===== BUILD LOG =====
+Change Dir: /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_536f5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_536f5.dir/build.make CMakeFiles/cmTC_536f5.dir/build
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 들어감
+Building CXX object CMakeFiles/cmTC_536f5.dir/cpu_neon.cpp.o
+/usr/bin/c++    -O3 -DNDEBUG -fPIE   -mfpu=vfpv3 -std=c++11 -o CMakeFiles/cmTC_536f5.dir/cpu_neon.cpp.o -c /home/pi/SmartMirror/opencv/opencv-4.5.0/cmake/checks/cpu_neon.cpp
+/home/pi/SmartMirror/opencv/opencv-4.5.0/cmake/checks/cpu_neon.cpp:24:2: error: #error "NEON is not supported"
+ #error "NEON is not supported"
+  ^~~~~
+/home/pi/SmartMirror/opencv/opencv-4.5.0/cmake/checks/cpu_neon.cpp:13:30: error: ‘uint8x16_t’ does not name a type
+ void test_aliased_type(const uint8x16_t& a) { }
+                              ^~~~~~~~~~
+/home/pi/SmartMirror/opencv/opencv-4.5.0/cmake/checks/cpu_neon.cpp:14:30: error: ‘int8x16_t’ does not name a type
+ void test_aliased_type(const int8x16_t& a) { }
+                              ^~~~~~~~~
+/home/pi/SmartMirror/opencv/opencv-4.5.0/cmake/checks/cpu_neon.cpp:14:6: error: redefinition of ‘void test_aliased_type(const int&)’
+ void test_aliased_type(const int8x16_t& a) { }
+      ^~~~~~~~~~~~~~~~~
+/home/pi/SmartMirror/opencv/opencv-4.5.0/cmake/checks/cpu_neon.cpp:13:6: note: ‘void test_aliased_type(const int&)’ previously defined here
+ void test_aliased_type(const uint8x16_t& a) { }
+      ^~~~~~~~~~~~~~~~~
+/home/pi/SmartMirror/opencv/opencv-4.5.0/cmake/checks/cpu_neon.cpp: In function ‘int main()’:
+/home/pi/SmartMirror/opencv/opencv-4.5.0/cmake/checks/cpu_neon.cpp:29:18: error: ‘test’ was not declared in this scope
+   printf("%d\n", test());
+                  ^~~~
+make[1]: *** [CMakeFiles/cmTC_536f5.dir/build.make:66: CMakeFiles/cmTC_536f5.dir/cpu_neon.cpp.o] 오류 1
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 나감
+make: *** [Makefile:121: cmTC_536f5/fast] 오류 2
+
+===== END =====
+
+Compilation failed:
+    source file: '/home/pi/SmartMirror/opencv/opencv-4.5.0/cmake/checks/cpu_fp16.cpp'
+    check option: ' -mfpu=neon'
+===== BUILD LOG =====
+Change Dir: /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5309e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5309e.dir/build.make CMakeFiles/cmTC_5309e.dir/build
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 들어감
+Building CXX object CMakeFiles/cmTC_5309e.dir/cpu_fp16.cpp.o
+/usr/bin/c++    -O3 -DNDEBUG -fPIE   -mfpu=neon -std=c++11 -o CMakeFiles/cmTC_5309e.dir/cpu_fp16.cpp.o -c /home/pi/SmartMirror/opencv/opencv-4.5.0/cmake/checks/cpu_fp16.cpp
+/home/pi/SmartMirror/opencv/opencv-4.5.0/cmake/checks/cpu_fp16.cpp: In function ‘int test()’:
+/home/pi/SmartMirror/opencv/opencv-4.5.0/cmake/checks/cpu_fp16.cpp:21:5: error: ‘float16x4_t’ was not declared in this scope
+     float16x4_t v_dst = vcvt_f16_f32(v_src);
+     ^~~~~~~~~~~
+/home/pi/SmartMirror/opencv/opencv-4.5.0/cmake/checks/cpu_fp16.cpp:21:5: note: suggested alternative: ‘float32x4_t’
+     float16x4_t v_dst = vcvt_f16_f32(v_src);
+     ^~~~~~~~~~~
+     float32x4_t
+/home/pi/SmartMirror/opencv/opencv-4.5.0/cmake/checks/cpu_fp16.cpp:22:19: error: expected primary-expression before ‘)’ token
+     *(float16x4_t*)dst = v_dst;
+                   ^
+make[1]: *** [CMakeFiles/cmTC_5309e.dir/build.make:66: CMakeFiles/cmTC_5309e.dir/cpu_fp16.cpp.o] 오류 1
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 나감
+make: *** [Makefile:121: cmTC_5309e/fast] 오류 2
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C'
+    Output line: 'cc1: warning: command line option ‘-fvisibility-inlines-hidden’ is valid for C++/ObjC++ but not for C'
+Compilation failed:
+    source file: '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -fvisibility=hidden  -fvisibility-inlines-hidden'
+===== BUILD LOG =====
+Change Dir: /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b37e2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b37e2.dir/build.make CMakeFiles/cmTC_b37e2.dir/build
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 들어감
+Building C object CMakeFiles/cmTC_b37e2.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG -fPIE   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections -mfpu=neon -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles/cmTC_b37e2.dir/src.c.o   -c /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command line option ‘-fvisibility-inlines-hidden’ is valid for C++/ObjC++ but not for C
+/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+Linking C executable cmTC_b37e2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b37e2.dir/link.txt --verbose=1
+/usr/bin/cc   -O3 -DNDEBUG    CMakeFiles/cmTC_b37e2.dir/src.c.o  -o cmTC_b37e2 
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 나감
+
+===== END =====
+
+Determining if the _aligned_malloc exist failed with the following output:
+Change Dir: /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2f383/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2f383.dir/build.make CMakeFiles/cmTC_2f383.dir/build
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 들어감
+Building C object CMakeFiles/cmTC_2f383.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -fPIE   -o CMakeFiles/cmTC_2f383.dir/CheckSymbolExists.c.o   -c /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘_aligned_malloc’ undeclared (first use in this function); did you mean ‘__builtin_malloc’?
+   return ((int*)(&_aligned_malloc))[argc];
+                   ^~~~~~~~~~~~~~~
+                   __builtin_malloc
+/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+ int main(int argc, char** argv)
+          ~~~~^~~~
+make[1]: *** [CMakeFiles/cmTC_2f383.dir/build.make:66: CMakeFiles/cmTC_2f383.dir/CheckSymbolExists.c.o] 오류 1
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 나감
+make: *** [Makefile:121: cmTC_2f383/fast] 오류 2
+
+File /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _aligned_malloc
+  return ((int*)(&_aligned_malloc))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option ‘-Wno-inconsistent-missing-override’'
+Compilation failed:
+    source file: '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-inconsistent-missing-override'
+===== BUILD LOG =====
+Change Dir: /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3001c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3001c.dir/build.make CMakeFiles/cmTC_3001c.dir/build
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 들어감
+Building CXX object CMakeFiles/cmTC_3001c.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wsign-promo -Winit-self -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations -Wno-misleading-indentation -Wno-deprecated -Wno-suggest-override  -O3 -DNDEBUG  -DNDEBUG -fPIE   -Wno-inconsistent-missing-override -std=c++11 -o CMakeFiles/cmTC_3001c.dir/src.cxx.o -c /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx
+/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+cc1plus: warning: unrecognized command line option ‘-Wno-inconsistent-missing-override’
+Linking CXX executable cmTC_3001c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3001c.dir/link.txt --verbose=1
+/usr/bin/c++     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wsign-promo -Winit-self -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations -Wno-misleading-indentation -Wno-deprecated -Wno-suggest-override  -O3 -DNDEBUG  -DNDEBUG    -Wl,--gc-sections -Wl,--as-needed  CMakeFiles/cmTC_3001c.dir/src.cxx.o  -o cmTC_3001c 
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 나감
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C\+\+'
+    Output line: 'cc1plus: warning: command line option ‘-Wno-missing-prototypes’ is valid for C/ObjC but not for C++'
+Compilation failed:
+    source file: '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-missing-prototypes'
+===== BUILD LOG =====
+Change Dir: /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_772ea/fast"
+/usr/bin/make -f CMakeFiles/cmTC_772ea.dir/build.make CMakeFiles/cmTC_772ea.dir/build
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 들어감
+Building CXX object CMakeFiles/cmTC_772ea.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wsign-promo -Winit-self -Wno-delete-non-virtual-dtor -Wno-comment -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations -Wno-misleading-indentation -Wno-deprecated -Wno-suggest-override -Wno-implicit-fallthrough -Wno-tautological-compare  -O3 -DNDEBUG  -DNDEBUG -fPIE   -Wno-missing-prototypes -std=c++11 -o CMakeFiles/cmTC_772ea.dir/src.cxx.o -c /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: warning: command line option ‘-Wno-missing-prototypes’ is valid for C/ObjC but not for C++
+/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+Linking CXX executable cmTC_772ea
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_772ea.dir/link.txt --verbose=1
+/usr/bin/c++     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wsign-promo -Winit-self -Wno-delete-non-virtual-dtor -Wno-comment -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations -Wno-misleading-indentation -Wno-deprecated -Wno-suggest-override -Wno-implicit-fallthrough -Wno-tautological-compare  -O3 -DNDEBUG  -DNDEBUG    -Wl,--gc-sections -Wl,--as-needed  CMakeFiles/cmTC_772ea.dir/src.cxx.o  -o cmTC_772ea 
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 나감
+
+===== END =====
+
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dffcb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dffcb.dir/build.make CMakeFiles/cmTC_dffcb.dir/build
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 들어감
+Building C object CMakeFiles/cmTC_dffcb.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=sgemm_ -O3 -DNDEBUG  -DNDEBUG -fPIE   -o CMakeFiles/cmTC_dffcb.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_dffcb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dffcb.dir/link.txt --verbose=1
+/usr/bin/cc    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=sgemm_ -O3 -DNDEBUG  -DNDEBUG    -Wl,--gc-sections -Wl,--as-needed  CMakeFiles/cmTC_dffcb.dir/CheckFunctionExists.c.o  -o cmTC_dffcb 
+/usr/bin/ld: CMakeFiles/cmTC_dffcb.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text.startup.main+0xc): undefined reference to `sgemm_'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_dffcb.dir/build.make:87: cmTC_dffcb] 오류 1
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 나감
+make: *** [Makefile:121: cmTC_dffcb/fast] 오류 2
+
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option ‘-Wno-tautological-undefined-compare’'
+Compilation failed:
+    source file: '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-tautological-undefined-compare'
+===== BUILD LOG =====
+Change Dir: /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_696fb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_696fb.dir/build.make CMakeFiles/cmTC_696fb.dir/build
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 들어감
+Building CXX object CMakeFiles/cmTC_696fb.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef  -O3 -DNDEBUG  -DNDEBUG -fPIE   -Wno-tautological-undefined-compare -std=c++11 -o CMakeFiles/cmTC_696fb.dir/src.cxx.o -c /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx
+/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+cc1plus: warning: unrecognized command line option ‘-Wno-tautological-undefined-compare’
+Linking CXX executable cmTC_696fb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_696fb.dir/link.txt --verbose=1
+/usr/bin/c++     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef  -O3 -DNDEBUG  -DNDEBUG    -Wl,--gc-sections -Wl,--as-needed  CMakeFiles/cmTC_696fb.dir/src.cxx.o  -o cmTC_696fb 
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 나감
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option ‘-Wno-shorten-64-to-32’'
+Compilation failed:
+    source file: '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-shorten-64-to-32'
+===== BUILD LOG =====
+Change Dir: /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1275c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1275c.dir/build.make CMakeFiles/cmTC_1275c.dir/build
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 들어감
+Building CXX object CMakeFiles/cmTC_1275c.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable  -O3 -DNDEBUG  -DNDEBUG -fPIE   -Wno-shorten-64-to-32 -std=c++11 -o CMakeFiles/cmTC_1275c.dir/src.cxx.o -c /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx
+/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+cc1plus: warning: unrecognized command line option ‘-Wno-shorten-64-to-32’
+Linking CXX executable cmTC_1275c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1275c.dir/link.txt --verbose=1
+/usr/bin/c++     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable  -O3 -DNDEBUG  -DNDEBUG    -Wl,--gc-sections -Wl,--as-needed  CMakeFiles/cmTC_1275c.dir/src.cxx.o  -o cmTC_1275c 
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 나감
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option ‘-Wno-enum-compare-switch’'
+Compilation failed:
+    source file: '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-enum-compare-switch'
+===== BUILD LOG =====
+Change Dir: /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b2993/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b2993.dir/build.make CMakeFiles/cmTC_b2993.dir/build
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 들어감
+Building CXX object CMakeFiles/cmTC_b2993.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable -Wno-invalid-offsetof  -O3 -DNDEBUG  -DNDEBUG -fPIE   -Wno-enum-compare-switch -std=c++11 -o CMakeFiles/cmTC_b2993.dir/src.cxx.o -c /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx
+/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+cc1plus: warning: unrecognized command line option ‘-Wno-enum-compare-switch’
+Linking CXX executable cmTC_b2993
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2993.dir/link.txt --verbose=1
+/usr/bin/c++     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable -Wno-invalid-offsetof  -O3 -DNDEBUG  -DNDEBUG    -Wl,--gc-sections -Wl,--as-needed  CMakeFiles/cmTC_b2993.dir/src.cxx.o  -o cmTC_b2993 
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 나감
+
+===== END =====
+
+Determining if the include file sys/videoio.h exists failed with the following output:
+Change Dir: /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_905a3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_905a3.dir/build.make CMakeFiles/cmTC_905a3.dir/build
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 들어감
+Building C object CMakeFiles/cmTC_905a3.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Winit-self -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -fPIE   -o CMakeFiles/cmTC_905a3.dir/CheckIncludeFile.c.o   -c /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: sys/videoio.h: 그런 파일이나 디렉터리가 없습니다
+ #include <sys/videoio.h>
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_905a3.dir/build.make:66: CMakeFiles/cmTC_905a3.dir/CheckIncludeFile.c.o] 오류 1
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 나감
+make: *** [Makefile:121: cmTC_905a3/fast] 오류 2
+
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: warning: unrecognized command line option ‘-Wno-unused-private-field’'
+Compilation failed:
+    source file: '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-unused-private-field'
+===== BUILD LOG =====
+Change Dir: /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f8963/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f8963.dir/build.make CMakeFiles/cmTC_f8963.dir/build
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 들어감
+Building CXX object CMakeFiles/cmTC_f8963.dir/src.cxx.o
+/usr/bin/c++    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -fvisibility=hidden -fvisibility-inlines-hidden -Wno-unused-function -Wno-deprecated-declarations -Wno-overloaded-virtual  -O3 -DNDEBUG  -DNDEBUG -fPIE   -Wno-unused-private-field -std=c++11 -o CMakeFiles/cmTC_f8963.dir/src.cxx.o -c /home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx
+/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ 
+cc1plus: warning: unrecognized command line option ‘-Wno-unused-private-field’
+Linking CXX executable cmTC_f8963
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8963.dir/link.txt --verbose=1
+/usr/bin/c++     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -fvisibility=hidden -fvisibility-inlines-hidden -Wno-unused-function -Wno-deprecated-declarations -Wno-overloaded-virtual  -O3 -DNDEBUG  -DNDEBUG    -Wl,--gc-sections -Wl,--as-needed  CMakeFiles/cmTC_f8963.dir/src.cxx.o  -o cmTC_f8963 
+make[1]: 디렉터리 '/home/pi/SmartMirror/opencv/opencv-4.5.0/build/CMakeFiles/CMakeTmp' 나감
+
+===== END =====
+
