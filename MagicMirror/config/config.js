@@ -1,15 +1,3 @@
-/* Magic Mirror Config Sample
- *
- * By Michael Teeuw http://michaelteeuw.nl
- * MIT Licensed. (라이센스 주의)
- *
- * For more information how you can configurate this file
- * See https://github.com/MichMich/MagicMirror#configuration
- *
- * github testing_20210211
- * testingsd
- */
-
 var config = {
 	address: "localhost", // Address to listen on, can be:
 	                      // - "localhost", "127.0.0.1", "::1" to listen on loopback interface
@@ -30,7 +18,9 @@ var config = {
 	modules: [
 		{
 			module: "alert",
+			//position: "top_bar"
 		},
+
 		{
 			module: "clock",
 			position: "top_left"
@@ -38,7 +28,7 @@ var config = {
 		{
 			module: "calendar",
 			header: "한국 공휴일",
-			position: "top_left",
+			position: "top_right",
 			config: {
 				calendars: [
 					{
@@ -51,21 +41,21 @@ var config = {
 //Current Weather
 		{
 			module: "currentweather",
-			position: "top_right",
+			position: "top_left",
 			config: {
-				location: "Seoul-teukbyeolsi",
-				locationID: "1835847",  //ID from http://bulk.openweathermap.org/sample/; unzip the gz file and find your city
-				appid: "4f8599999999999999999999999993"
+				location: "Chungju, KR",
+				locationID: "1845604",  //ID from http://bulk.openweathermap.org/sample/; unzip the gz file and find your city
+				appid: "62eeac7286c33c29902a61152108799f"
 			}
 		},
 		{
 			module: "weatherforecast",
-			position: "top_right",
+			position: "top_left",
 			header: "Weather Forecast",
 			config: {
-				location: "Seoul,KR",
-				locationID: "1835847",  //ID from https://openweathermap.org/city
-				appid: "4f49999999999999999993"
+				location: "Chungju, KR",
+				locationID: "1845604",  //ID from https://openweathermap.org/city
+				appid: "62eeac7286c33c29902a61152108799f"
 			}
 		},
 //Air Pollution Display (추가해야함)
@@ -79,6 +69,7 @@ var config = {
 		}
 	},
 
+	/*
 {
 			module: "compliments",
 			position: "lower_third",
@@ -152,20 +143,22 @@ var config = {
 		          ],
 		        }
 		}
-		},
+		}, */
 //New Feed(JTBC 뉴스)
 		{
 			module: "newsfeed",
-			position: "middle_center",
+			position: "bottom_bar",
 			config: {
 				feeds: [
 					{
-						title: "JTBC",
-						url: "http://fs.jtbc.joins.com/RSS/newsflash.xml"
+						title: "연합뉴스",
+						url: "https://www.yonhapnewstv.co.kr/browse/feed/"
 					}
 				],
 				showSourceTitle: true,
-				showPublishDate: true
+				showPublishDate: true,
+				broadcastNewsFeeds: true,
+				broadcastNewsUpdates: true
 			}
 		}, 
 {
@@ -204,7 +197,7 @@ var config = {
 },
 		{
 			module: "MMM-Hotword",
-			position: "bottom_center",
+			position: "b",
 			config: {
 			    chimeOnFinish:null,
 			    mic: {
