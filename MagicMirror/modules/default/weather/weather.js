@@ -29,7 +29,7 @@ Module.register("weather", {
 		showWindDirectionAsArrow: false,
 		useBeaufort: true,
 		lang: config.language,
-		showHumidity: false,
+		showHumidity: true,
 		showSun: true,
 		degreeLabel: false,
 		decimalSymbol: ".",

@@ -18,7 +18,7 @@ var config = {
 	modules: [
 		{
 			module: "alert",
-			//position: "top_bar"
+			position: "top_center"
 		},
 
 		{
@@ -38,12 +38,14 @@ var config = {
 				]
 			}
 		},
-//Current Weather
+		
+//Current Weather original function
+/*
 		{
 			module: "currentweather",
 			position: "top_left",
 			config: {
-				location: "Chungju, KR",
+				location: "Cheongju, KR",
 				locationID: "1845604",  //ID from http://bulk.openweathermap.org/sample/; unzip the gz file and find your city
 				appid: "62eeac7286c33c29902a61152108799f"
 			}
@@ -53,11 +55,45 @@ var config = {
 			position: "top_left",
 			header: "Weather Forecast",
 			config: {
-				location: "Chungju, KR",
+				location: "Cheongju, KR",
 				locationID: "1845604",  //ID from https://openweathermap.org/city
 				appid: "62eeac7286c33c29902a61152108799f"
 			}
 		},
+*/
+
+		{
+			disabled: false,
+			module: 'MMM-WeatherOrNot',
+			position: 'top_left',
+			config: {
+			  location: "cheongju-si",                // See instructions
+			  locationCode: "36d64127d49",              // See instructions
+			  languages: "en",                          // See Languages list
+			  tempUnits: "C",                           // F or C
+			  font: "Tahoma",                           // See Font list
+			  textColor: "#ffffff",                     // Hex color codes.
+			  htColor: "#ffffff",                       // high temp color. Hex color codes.
+			  ltColor: "#00dfff",                       // low temp color. Hex color codes.
+			  sunColor: "#febc2f",                      // Hex color codes.
+			  moonColor: "#dfdede",                     // Hex color codes.
+			  cloudColor: "#dfdede",                    // Hex color codes.
+			  cloudFill: "#1f567c",                     // Hex color codes.
+			  rainColor: "#93bffe",                     // Hex color codes.
+			  snowColor: "#dfdede",                     // Hex color codes.
+			  height: "220px",                          // module is responsive to changes
+			  width: "350px",                          // module is responsive to changes
+			  label: "New Dorp",                        // Location seems logical . .
+			  label2: "Staten Island",                  // . . . or anything you like
+			  days: "7",                                // 3, 5 or 7
+			  theme: "dark",                            // See Themes list *** theme overrides bgColor. ***
+			  bgColor: "#000000",                       // theme overrides bgColor.
+			  icons: "Climacons Animated",              // Iconvault, Climacons or Climacons Animated
+			  animationSpeed: 3000,
+			  updateInterval: 10 * 60 * 1000,
+			}
+		},		
+
 //Air Pollution Display (추가해야함)
 	{
 		module: 'MMM-AirQuality',
@@ -69,7 +105,7 @@ var config = {
 		}
 	},
 
-	/*
+	
 {
 			module: "compliments",
 			position: "lower_third",
@@ -143,7 +179,7 @@ var config = {
 		          ],
 		        }
 		}
-		}, */
+		}, 
 //New Feed(JTBC 뉴스)
 		{
 			module: "newsfeed",

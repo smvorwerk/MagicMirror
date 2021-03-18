@@ -1,3 +1,4 @@
+
 .weather .weathericon,
 .weather .fa-home {
   font-size: 75%;
@@ -20,7 +21,7 @@
 }
 
 .weather .weather-icon {
-  padding-right: 30px;
+  padding-right: 30px; /*30*/
   text-align: center;
 }
 
