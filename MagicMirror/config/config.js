@@ -75,6 +75,7 @@ var config = {
 			
 		},
 		
+		//날씨 예보
 		{
 			disabled: false,
 			module: 'MMM-WeatherOrNot',
@@ -106,7 +107,6 @@ var config = {
 			  updateInterval: 10 * 60 * 1000,
 			}
 		},		
-
 	
 {
 			module: "compliments",
@@ -182,7 +182,7 @@ var config = {
 		        }
 		}
 		}, 
-//New Feed(JTBC 뉴스)
+//New Feed(연합뉴스)
 		{
 			module: "newsfeed",
 			position: "bottom_bar",

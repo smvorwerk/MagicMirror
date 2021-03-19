@@ -10,7 +10,7 @@
  *****************************************************/
 
 body{
-    margin: 20px;
+    margin: 10px;
 }
 
 .compliments .xlarge{
@@ -27,30 +27,8 @@ body{
   font-size: 30px;
 }
 
-
-
-.MMM-AirQuality .x-small {
-  font-size: 10px;
-  line-height: 10px;
-  letter-spacing: -3px;
-}
-.MMM-AirQuality .small {
-  font-size: 10px;
-  line-height: 10px;
-  letter-spacing: -3px;
-}
-.MMM-AirQuality .medium {
-  font-size: 10px;
-  line-height: 10px;
-  letter-spacing: -3px;
-}
-.MMM-AirQuality .large {
-  font-size: 10px;
-  line-height: 10px;
-  letter-spacing: -3px;
-}
-.MMM-AirQuality .x-large {
-  font-size: 10px;
-  line-height: 10px;
-  letter-spacing: -3px;
+/*미세먼지 모듈 크기조절*/
+.MMM-AirQuality{                  
+			width: 350px;
+      font-size: 20px;
 }
