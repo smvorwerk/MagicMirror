@@ -13,7 +13,6 @@ body{
     margin: 20px;
 }
 
-
 .compliments .xlarge{
     font-size: 30px;
 }
@@ -29,12 +28,29 @@ body{
 }
 
 
-/*
-.weather .weathericon,
-.weather .fa-home {
-  font-size: 30%;
-  line-height: 20px;
-  display: inline-block;
-  transform: translate(0, -3px);
+
+.MMM-AirQuality .x-small {
+  font-size: 10px;
+  line-height: 10px;
+  letter-spacing: -3px;
 }
-*/
+.MMM-AirQuality .small {
+  font-size: 10px;
+  line-height: 10px;
+  letter-spacing: -3px;
+}
+.MMM-AirQuality .medium {
+  font-size: 10px;
+  line-height: 10px;
+  letter-spacing: -3px;
+}
+.MMM-AirQuality .large {
+  font-size: 10px;
+  line-height: 10px;
+  letter-spacing: -3px;
+}
+.MMM-AirQuality .x-large {
+  font-size: 10px;
+  line-height: 10px;
+  letter-spacing: -3px;
+}

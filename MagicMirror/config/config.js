@@ -40,7 +40,7 @@ var config = {
 		},
 		
 //Current Weather original function
-/*
+
 		{
 			module: "currentweather",
 			position: "top_left",
@@ -50,6 +50,8 @@ var config = {
 				appid: "62eeac7286c33c29902a61152108799f"
 			}
 		},
+
+		/*
 		{
 			module: "weatherforecast",
 			position: "top_left",
@@ -61,7 +63,18 @@ var config = {
 			}
 		},
 */
-
+		//Air Pollution Display (추가해야함)
+		{
+			module: 'MMM-AirQuality',
+			header: "대기오염",
+			position: 'top_left',
+			//lang: en,
+			config: {
+				location: 'cheongju', // the location to check the index for
+			}
+			
+		},
+		
 		{
 			disabled: false,
 			module: 'MMM-WeatherOrNot',
@@ -93,17 +106,6 @@ var config = {
 			  updateInterval: 10 * 60 * 1000,
 			}
 		},		
-
-//Air Pollution Display (추가해야함)
-	{
-		module: 'MMM-AirQuality',
-		header: "대기오염",
-		position: 'top_center',
-		config: {
-		  location: 'seoul', // the location to check the index for
-		  //lang: en,
-		}
-	},
 
 	
 {
