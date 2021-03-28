@@ -27,18 +27,23 @@ var config = {
 		},
 		{
 			module: "calendar",
-			header: "한국 공휴일",
+			header: "일정 및 공휴일",
 			position: "top_right",
 			config: {
 				calendars: [
 					{
 						symbol: "calendar-check",
-						url: "https://calendar.google.com/calendar/ical/ko.south_korea%23holiday%40group.v.calendar.google.com/public/basic.ics"
+						//url: "https://calendar.google.com/calendar/ical/ko.south_korea%23holiday%40group.v.calendar.google.com/public/basic.ics"
+						url: "http://www.google.com/calendar/ical/46hp89gvrbnnh1gpadt0a4hdr4%group.calender.google.com/public/basic.ics"
+					},
+					{
+						//구글 캘린더 연동
+						url: "https://calendar.google.com/calendar/ical/cbnugrade%40gmail.com/private-2c50420b8f6a3dd4d807573635366158/basic.ics"
 					}
 				]
 			}
 		},
-		
+
 //Current Weather original function
 
 		{
@@ -108,6 +113,14 @@ var config = {
 			}
 		},		
 	
+		{
+			module: "MMM-Face-Multi-User-Recognition-SMAI",
+			position: "top_right",
+			config: {
+			  useMMMFaceRecoDNN: true
+			}
+		  },
+		  
 {
 			module: "compliments",
 			position: "lower_third",
@@ -138,10 +151,10 @@ var config = {
 		            "구름낀 날씨~~ 혹시 기분도?"
 		          ],
 		          cloudy: [//흐림
-				"날씨가 흐리니 내마음도 흐리네"
+				"날씨가 흐리니 제 마음도 흐리네요"
 		          ],
 		          cloudy_windy: [//흐리고 바람
-				"흐리고 바람불고 "
+				"흐리고 바람도 불어요"
 		          ],
 		          showers: [//소나기
 				"소나기가 내리네요"
@@ -153,10 +166,10 @@ var config = {
 			"천둥번개 치는날 죄지은 사람은 밖으로 나가지 마세요"
 		          ],
 		          snow: [//눈
-				"눈이 내리네~~ 당신이 가버린 지금"
+				"눈이 내리고 있어요~"
 		          ],
 		          fog: [//안개
-				"안개낀 장충단 공원~~~"
+				"오늘처럼 안개낀 날에는 운전 조심!"
 		          ],
 		          night_clear: [//맑은 밤
 				"맑은 밤 별이 보이나요?"
@@ -168,13 +181,13 @@ var config = {
 				"소나기 내리는 밤이에요"
 		          ],
 		          night_rain: [//비오는 밤
-				"비오는 밤이군요 멜랑꼴리해져요"
+				"비오는 밤이군요"
 		          ],
 		          night_thunderstorm: [//천둥번개 밤
-				"천둥번개치는 밤 누군가가 필요해"
+				"천둥번개치는 밤이네요"
 		          ],
 		          night_snow: [//눈오는 밤
-				"눈오는 밤, 늑대목도리 여우허리띠"
+				"눈이 오고 있는 밤입니다. 아침 운전을 조심해야겠네요."
 		          ],
 		          night_alt_cloudy_windy: [//흐리고 바람부는 밤
 				"흐리고 바람부는 밤.. 최악이군"
