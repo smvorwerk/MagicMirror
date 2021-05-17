@@ -79,7 +79,7 @@ var config = {
 			}
 			
 		},
-		
+
 		//날씨 예보
 		{
 			disabled: false,
