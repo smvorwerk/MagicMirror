@@ -16,15 +16,18 @@ var config = {
 	units: "metric",
 
 	modules: [
+		/*
 		{
 			module: "alert",
 			position: "top_center"
 		},
-
+			*/
 		{
 			module: "clock",
 			position: "top_left"
 		},
+		//default calendar module
+		/*
 		{
 			module: "calendar",
 			header: "일정 및 공휴일",
@@ -42,7 +45,7 @@ var config = {
 					}
 				]
 			}
-		},
+		},*/
 
 //Current Weather original function
 
@@ -68,7 +71,7 @@ var config = {
 			}
 		},
 */
-		//Air Pollution Display (추가해야함)
+		//Air Pollution Display
 		{
 			module: 'MMM-AirQuality',
 			header: "대기오염",
@@ -117,13 +120,45 @@ var config = {
 			module: "MMM-Face-Multi-User-Recognition-SMAI",
 			position: "top_right",
 			config: {
-			  useMMMFaceRecoDNN: true
+			  useMMMFaceRecoDNN: true, 
+			  showTitle: true,
+			  width: "200px",
+			  morningStartTime: 3,
+			  morningEndTime: 12,
+			  afternoonStartTime: 12,
+			  afternoonEndTime: 17
 			}
 		  },
+
+		{
+			module: 'calendar_monthly',
+			position: 'top_center',
+			config: {
+				// The config property is optional
+				// Without a config, a default month view is shown
+				// Please see the 'Configuration Options' section for more information
+			}
+		},
+
+		  {
+			module: "MMM-MyCalendar",
+			header: "일정",
+			position: "top_center",	// This can be any of the regions. Best results in left or right regions.
+			config: {
+				colored: true,
+				calendars: [
+					{
+						color: '#99FF99',
+						url: 'https://calendar.google.com/calendar/ical/cbnugrade%40gmail.com/private-2c50420b8f6a3dd4d807573635366158/basic.ics',
+						symbol: 'calendar',
+					},
+	],
+			}
+		},
 		  
 {
 			module: "compliments",
-			position: "lower_third",
+			position: "bottom_center",
 			config: {
 		        	compliments: {
 		          	anytime: [ //아무때나
