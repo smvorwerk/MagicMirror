@@ -1599,9 +1599,9 @@ var buttons = {
 
         self.setStatus(false, false, wrapper);
     },
-    "mirror-link-button": function() {
-        window.open("/", "_blank");
-    },
+    // "mirror-link-button": function() {
+    //     window.open("/", "_blank");
+    // },
     "classes-button": function() {
     	window.location.hash = "classes-menu";
     },

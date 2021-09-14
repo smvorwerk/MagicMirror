@@ -23,6 +23,171 @@ let config = {
 	logLevel: ["INFO", "LOG", "WARN", "ERROR"], // Add "DEBUG" for even more logging
 
 	modules: [
+		
+		{
+			module: "MMM-Detector",
+			position: "top_right",
+			classes: 'always',
+			configDeepMerge: true,
+			config: {
+			  debug: false,
+			  autoStart: true,
+			  useLogos: false,
+			  micConfig: {
+				recorder: "auto",
+				device: "default",
+				// only for snowboy:
+				audioGain: 2.0,
+				applyFrontend: true // When you use only `snowboy` and `smart_mirror`, `false` is better. But with other models, `true` is better.
+			  },
+			  newLogos: {
+				default: "default.png"
+			  },
+			  detectors: [
+				{
+				  detector: "Snowboy",
+				  Model: "jarvis",
+				  Sensitivity: null,
+				  Logo: "google",
+				  autoRestart: false,
+				  onDetected: {
+					notification: "GA_ACTIVATE"
+				  }
+				}
+			  ],
+			  NPMCheck: {
+				useChecker: true,
+				delay: 10 * 60 * 1000,
+				useAlert: true
+			  }
+			}
+		  },
+
+		  {
+			module: "MMM-GoogleAssistant",
+			position: "top_left",
+			configDeepMerge: true,
+			config: {
+				debug: false,
+				assistantConfig: {
+					lang: "ko-KR",
+					latitude: 36.6291558,
+					longitude: 127.4563079,
+				  },
+				  responseConfig: {
+					useFullscreen: false,
+					useResponseOutput: true,
+					responseOutputCSS: "response_output.css",
+					screenOutputTimer: 5000,
+					activateDelay: 250,
+					useAudioOutput: true,
+					useChime: true,
+					confirmationChime: true,
+					useInformations: true,
+		
+					chimes: {
+						beep: "beep.mp3",
+						error: "error.mp3",
+						continue: "continue.mp3",
+						confirmation: "confirmation.mp3",
+						open: "Google_beep_open.mp3",
+						close: "Google_beep_close.mp3",
+						warning: "warning.ogg",
+					},
+					imgStatus: {
+						confirmation: "confirmation.gif",
+						listen: "listen.gif",
+						error: "error.gif",
+						reply: "reply.gif",
+						standby: "standby.gif",
+					},
+					zoom: {
+						transcription: "80%",
+						responseOutput: "60%"
+					}
+				  },
+				  micConfig: {},
+				  Extented: {
+					useEXT: true,
+					deviceName: "SmartMirror",
+					  stopCommand: "정지",
+					youtube: {
+						useYoutube: true,
+						youtubeCommand: "유튜브",
+						displayResponse: true,
+						useVLC: true,
+						minVolume: 30,
+						maxVolume: 100
+					},
+					links: {
+						useLinks: true,
+						displayDelay: 60 * 1000,
+						scrollActivate: true,
+						scrollStep: 25,
+						scrollInterval: 1000,
+						scrollStart: 5000
+					  },
+					photos: {},
+					volume: {},
+					welcome: {
+						useWelcome: false,
+						welcome: "brief today"
+					},
+					screen: {
+						useScreen: true,
+						animateBody: true,
+						delay: 5 * 60 * 1000,
+						turnOffDisplay: false,
+						mode: 1,
+						ecoMode: false,
+						delayed: 0,
+						displayCounter: false,
+						displayBar: true,
+						displayStyle: "Text",
+						detectorSleeping: false,
+						governorSleeping: false,
+						displayLastPresence: true,
+						userPresenceNotification: true, // available with v3.0.3
+						screenStatusNotification: true // available with v3.0.3
+					},
+					touch: {},
+					pir: {},
+					governor: {},
+					internet: {
+						useInternet: true,
+						displayPing: false,
+						delay: 2* 60 * 1000,
+						scan: "google.kr",
+						command: "pm2 restart 0",
+						showAlert: true,
+						needRestart: false
+					  },
+					cast: {
+						useCast: true,
+						castName: "Magic Mirror (Vanity)",
+						port: 8569
+					},
+					spotify: {
+					useSpotify: false,
+					visual: {
+						updateInterval: 1000,
+						idleInterval: 10000,
+						useBottomBar: false,
+						CLIENT_ID: "",
+						CLIENT_SECRET: "",
+					},
+					player: {}
+					},
+				  },
+				  recipes: [],
+				  NPMCheck: {
+					useChecker: true,
+					delay: 10 * 60 * 1000,
+					useAlert: true,
+				}
+			}
+		  },
+
 		{
 			module: "clock",
 			position: "top_left",
@@ -34,7 +199,7 @@ let config = {
 			position: "lower_third"
 		},
 
-		//Current Weather original function
+		// Current Weather original function
 		{
 			module: "currentweather",
 			position: "top_left",
@@ -104,35 +269,17 @@ let config = {
 			}
 		},
 
-		// {
-		// 	module: "calendar",
-		// 	header: "calendar_Detail",
-		// 	classes: 'Billgates',
-		//  	position: "top_center",
-		// 	config: {
-		// 		calendars: [
-		// 			{
-		// 				symbol: "calendar-check",
-		// 				url: "https://calendar.google.com/calendar/ical/cbnugrade%40gmail.com/private-2c50420b8f6a3dd4d807573635366158/basic.ics"					}
-		// 		]
-		// 	}
-		// },
-
 		{
-			module: "newsfeed",
-			position: "bottom_center",
-			classes: 'Biden',
+			module: "calendar",
+			header: "calendar_Detail",
+			classes: 'Billgates',
+		 	position: "top_center",
 			config: {
-				feeds: [
+				calendars: [
 					{
-						title: "연합뉴스",
-						url: "https://www.yonhapnewstv.co.kr/browse/feed/"
-					}
-				],
-				showSourceTitle: true,
-				showPublishDate: true,
-				broadcastNewsFeeds: true,
-				broadcastNewsUpdates: true
+						symbol: "calendar-check",
+						url: "https://calendar.google.com/calendar/ical/cbnugrade%40gmail.com/private-2c50420b8f6a3dd4d807573635366158/basic.ics"					}
+				]
 			}
 		},
 
@@ -206,7 +353,27 @@ let config = {
 				width: "200px",
 			}
 		},
-	
+		
+		{
+			module: "MMM-NewsFeed",
+			position: "top_right",
+			configDeepMerge: true,
+			classes: 'always',
+			config: {
+			  debug:false,
+			  update: "15m",
+			  speed: "15s",
+			  maxItems: 100,
+			  flux: [
+				{
+				  from: "실시간 뉴스", // name of the feed
+				  url: "https://www.yonhapnewstv.co.kr/browse/feed/", // url of your feed
+				  encoding: "UTF-8" // ISO-8859-1 Select your encoding type (UTF-8 by default)
+				},
+			  ]
+			}
+		  },
+
 	
 		  {
 			module: 'MMM-Remote-Control',
@@ -224,87 +391,6 @@ let config = {
 				// classes: {} // Optional, See "Custom Classes" below
 			}
 		},
-
-		{
-			module: "MMM-Detector",
-			position: "top_left",
-			classes: 'always',
-			configDeepMerge: true,
-			config: {
-			  debug: false,
-			  autoStart: true,
-			  useLogos: true,
-			  micConfig: {
-				recorder: "auto",
-				device: "default",
-				// only for snowboy:
-				audioGain: 2.0,
-				applyFrontend: true // When you use only `snowboy` and `smart_mirror`, `false` is better. But with other models, `true` is better.
-			  },
-			  newLogos: {
-				default: "default.png"
-			  },
-			  detectors: [
-				{
-				  detector: "Snowboy",
-				  Model: "jarvis",
-				  Sensitivity: null,
-				  Logo: "google",
-				  autoRestart: false,
-				  onDetected: {
-					notification: "GA_ACTIVATE"
-				  }
-				}
-			  ],
-			  NPMCheck: {
-				useChecker: true,
-				delay: 10 * 60 * 1000,
-				useAlert: true
-			  }
-			}
-		  },
-
-		  {
-			module: "MMM-GoogleAssistant",
-			position: "top_left",
-			classes: 'always',
-			configDeepMerge: true,
-			config: {
-			  debug: false,
-			  assistantConfig: {
-				lang: "ko-KR",
-				latitude: 36.62915581059808,
-				longitude: 127.45630791144228,
-			  },
-			  responseConfig: {
-				chimes: {},
-				imgStatus: {},
-				zoom: {}
-			  },
-			  micConfig: {},
-			  Extented: {
-				useEXT: false,
-				youtube: {},
-				links: {},
-				photos: {},
-				volume: {},
-				welcome: {},
-				screen: {},
-				touch: {},
-				pir: {},
-				governor: {},
-				internet: {},
-				cast: {},
-				spotify: {
-				  useSpotify: false,
-				  visual: {},
-				  player: {}
-				},
-			  },
-			  recipes: [],
-			  NPMCheck: {}
-			}
-		  },
 
 
 
