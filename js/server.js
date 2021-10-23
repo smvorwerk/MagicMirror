@@ -6,13 +6,22 @@
  */
 const express = require("express");
 const app = require("express")();
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
 const path = require("path");
 const ipfilter = require("express-ipfilter").IpFilter;
 const fs = require("fs");
+const { readdirSync } = require("fs");
+
 const helmet = require("helmet");
+
+var router = express.Router();
 
 const Log = require("logger");
 const Utils = require("./utils.js");
+
+var multer = require("multer");
 
 /**
  * Server
@@ -59,6 +68,7 @@ function Server(config, callback) {
 			res.status(403).send("This device is not allowed to access your mirror. <br> Please check your config.js or config.js.sample to change this.");
 		});
 	});
+
 	app.use(helmet({ contentSecurityPolicy: false }));
 
 	app.use("/js", express.static(__dirname));
@@ -88,6 +98,52 @@ function Server(config, callback) {
 
 		res.send(html);
 	});
+
+	app.get("/profileFolderCreate", function (req, res) {
+		// res.render('./modules/MMM-Remote-Control/remote.ejs')
+		console.log("profileFolderCreate GET");
+	});
+
+	app.post("/profileFolderCreate", function (req, res) {
+		res.send("new profile Folder Create!");
+		let createFolderPath = "./modules/MMM-Face-Reco-DNN/dataset/" + req.body.profileName;
+		fs.mkdir(createFolderPath, function (err) {
+			if (err) {
+				throw err;
+			}
+			console.log(req.body.profileName);
+			console.log("new profile Folder Create!");
+		});
+	});
+
+	var storage = multer.diskStorage({
+		destination: function (req, file, cb) {
+			cb(null, "./modules/MMM-Face-Reco-DNN/dataset");
+		},
+		filename: function (req, file, cb) {
+			cb(null, file.originalname);
+		},
+		fileFilter: function (req, file, callback) {
+			var ext = path.extname(file.originalname);
+			if (ext !== ".png" && ext !== ".jpg" && ext !== ".jpeg") {
+				return callback(new Error("PNG, JPG만 업로드하세요"));
+			}
+			callback(null, true);
+		}
+	});
+
+	var upload = multer({ storage: storage });
+
+	app.get("/imageUpload", function (req, res) {
+		// res.render('./modules/MMM-Remote-Control/remote.ejs')
+		console.log("imageUpload GET");
+	});
+
+	app.post("/imageUpload", upload.array("profile", 10), function (req, res) {
+		res.send("Image Upload Complete!");
+	});
+
+	module.exports = router;
 
 	if (typeof callback === "function") {
 		callback(app, io);
