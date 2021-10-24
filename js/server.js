@@ -17,6 +17,7 @@ var router = express.Router();
 const Log = require("logger");
 const Utils = require("./utils.js");
 var multer = require("multer");
+let exec = require("child_process").exec;
 
 /**
  * Server
@@ -138,6 +139,18 @@ function Server(config, callback) {
 	app.post("/imageUpload", upload.array("profile", 10), function (req, res) {
 		console.log("Image Upload Complete!");
 		res.send("Image Upload Complete!");
+	});
+
+	app.get("/imageEncode", function (req, res) {
+		console.log("imageEncode GET");
+	});
+
+	app.post("/imageEncode", function (req, res) {
+		var command = "cd modules/MMM-Face-Reco-DNN/tools && python3 encode.py -i ../dataset/ -e encodings.pickle -d hog";
+		exec(command, (err, out, stderr) => {
+			console.log(out);
+			res.send("Encoding Done! Go back home and reboot Mirror!");
+		});
 	});
 
 	module.exports = router;
