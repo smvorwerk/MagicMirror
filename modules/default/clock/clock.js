@@ -9,6 +9,7 @@
 Module.register("clock", {
 	// Module config defaults.
 	defaults: {
+		classes: "",
 		displayType: "digital", // options: digital, analog, both
 
 		timeFormat: config.timeFormat,

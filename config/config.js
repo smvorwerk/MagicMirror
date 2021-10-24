@@ -13,7 +13,7 @@ var config =
     '192.168.35.126',
     '192.168.35.1',
     '192.168.35.183',
-    '223.39.162.197',
+    '255.2555.255.255',
     '0,0,0,0',
     'x,x,x,x',
     'X,X,X,X'
@@ -243,12 +243,7 @@ var config =
         ]
       }
     },
-    {
-      module: 'MMM-SmartTouch',
-      position: 'bottom_center',
-      classes: 'always',
-      config: {}
-    },
+    
     {
       module: 'MMM-Face-Reco-DNN',
       classes: 'always',

@@ -2097,13 +2097,14 @@ var buttons = {
 
     self.setStatus(false, false, wrapper);
   },
-  // "restart-mm-button": function() {
-  //     Remote.sendSocketNotification("REMOTE_ACTION", { action: "RESTART" });
-  //     setTimeout(function() {
-  //         document.location.reload();
-  //         console.log("Delayed REFRESH");
-  //     }, 60000);
-  // },
+  "restart-mm-button": function () {
+    Remote.sendSocketNotification("REMOTE_ACTION", { action: "RESTART" });
+    setTimeout(function () {
+      document.location.reload();
+      console.log("Delayed REFRESH");
+    }, 60000);
+  },
+
   // "monitor-on-button": function() {
   //     Remote.sendSocketNotification("REMOTE_ACTION", { action: "MONITORON" });
   // },
