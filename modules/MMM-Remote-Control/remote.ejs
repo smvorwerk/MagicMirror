@@ -5,8 +5,6 @@
     <title>%%TRANSLATE:TITLE%%</title>
     <meta name="google" content="notranslate" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta http-equiv="Content-Security-Policy">
-
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="fonts/roboto.css">
@@ -18,7 +16,6 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
 </head>
 
 <body>
@@ -185,27 +182,28 @@
                             <span class="text">%%TRANSLATE:DEVTOOLS%%</span>
                         </div>
 
-
                         <div class="menu-element hidden image-menu">
                             <!-- <p>Profile List</p>
 
                             <p><%= title %></p>
                             <button class="updateProfileList">Update</button> -->
 
-
-                            <p>Profile Image Upload menu</p>
+                            <div>
+                            <p>Profile Folder Create</p>
                             <form method="POST" action="/profileFolderCreate" >
-                                <input type="text" name="profileName">
-                                <button type="submit">Profile Folder Create</button>
+                                <input type="text" name="profileName" class="image-menu-500"><br>
+                                <button type="submit" class="button-6" role="button">Profile Folder Create OR Select</button>
                             </form>
-
+                            </div>
+                            
+                            <div>
+                            <p>Profile Image Upload</p>
                             <form method="POST" action="/imageUpload" enctype="multipart/form-data" >
-                                <input type="text" name="profileName">
-                                <input type="file" name="profile" required multiple>
-                                <button type="submit">Upload</button>
+                                <input type="file" name="profile" required multiple class="image-menu-500"><br>
+                                <button type="submit" class="button-6" role="button">Upload Image</button>
                             </form>
+                            </div>
                         </div>
-
 
                     </div>
                     <!-- below fold part of alert menu -->

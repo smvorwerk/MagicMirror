@@ -56,6 +56,13 @@
     "desc": "Display internet connection status for MagicMirror<sup>2</sup>"
   },
   {
+    "longname": "MMM-CustomElementTime",
+    "id": "MMRIZE/MMM-CustomElementTime",
+    "url": "https://github.com/MMRIZE/MMM-CustomElementTime",
+    "author": "MMRIZE",
+    "desc": "Custom element `mm-time` launcher"
+  },
+  {
     "longname": "MMM-Dynamic-Modules",
     "id": "Toreke/MMM-Dynamic-Modules",
     "url": "https://github.com/Toreke/MMM-Dynamic-Modules",
@@ -169,9 +176,9 @@
   },
   {
     "longname": "MMM-NotificationTrigger",
-    "id": "eouia/MMM-NotificationTrigger",
-    "url": "https://github.com/eouia/MMM-NotificationTrigger",
-    "author": "eouia",
+    "id": "MMRIZE/MMM-NotificationTrigger",
+    "url": "https://github.com/MMRIZE/MMM-NotificationTrigger",
+    "author": "MMRIZE",
     "desc": "MMM-NotificationTrigger is a simple notification relay which can convert notifications from TRIGGER_NOTIFICATION to FIRE_NOTIFICATION"
   },
   {
@@ -243,6 +250,13 @@
     "url": "https://github.com/Klettner/MM-Remote",
     "author": "Klettner",
     "desc": "Android 📱  and Windows-desktop 💻  app to control your MagicMirror remotely. (Shutdown, reboot, toggle monitor on/off, change brightness of monitor, custom-commands...)"
+  },
+  {
+    "longname": "MMM-Scenes",
+    "id": "MMRIZE/MMM-Scenes",
+    "url": "https://github.com/MMRIZE/MMM-Scenes",
+    "author": "MMRIZE",
+    "desc": "MagicMirror module to change screen scenes by time and order with ANIMATION EFFECT."
   },
   {
     "longname": "MMM-SendNotificationButton",
@@ -453,6 +467,13 @@
     "url": "https://github.com/oemel09/MMM-DailyPower",
     "author": "oemel09",
     "desc": "A module that displays the verse of the day from [DailyPower](https://dailypower.oemel09.de)"
+  },
+  {
+    "longname": "MMM-DailyUnreachedPeopleGroup",
+    "id": "MStoltzfus/MMM-DailyUnreachedPeopleGroup",
+    "url": "https://github.com/MStoltzfus/MMM-DailyUnreachedPeopleGroup",
+    "author": "MStoltzfus",
+    "desc": "A module that displays the \"Unreached of the Day\" data from [Joshua Project](www.joshuaproject.net/pray/unreachedoftheday/today)"
   },
   {
     "longname": "MMM-Ecosia-Tree-Counter",
@@ -1204,6 +1225,13 @@
     "desc": "Time to the next buses, metros, rers & tramways for Paris Network (RATP), along with: the traffic status for selected lines, the risk of rain in the next hour, autolib and velib stations status."
   },
   {
+    "longname": "MMM-pathtime",
+    "id": "Comf0rTS1997/MMM-pathtime",
+    "url": "https://github.com/Comf0rTS1997/MMM-pathtime",
+    "author": "comf0rts",
+    "desc": "An unofficial Magic Mirror Module to show Port Autority Trans-Hudson(PATH) Train schedules."
+  },
+  {
     "longname": "MMM-pekavm",
     "id": "ytmytm/MMM-pekavm",
     "url": "https://github.com/ytmytm/MMM-pekavm",
@@ -1254,17 +1282,17 @@
   },
   {
     "longname": "MMM-RNV",
+    "id": "jupadin/MMM-RNV",
+    "url": "https://github.com/jupadin/MMM-RNV",
+    "author": "jupadin",
+    "desc": "Departure Monitor for stations in the Rhein-Neckar-Verkehr (RNV) public traffic network using the new API."
+  },
+  {
+    "longname": "MMM-RNV",
     "id": "jalibu/MMM-RNV",
     "url": "https://github.com/jalibu/MMM-RNV",
     "author": "jalibu",
     "desc": "A departure monitor for stations within the Rhein-Neckar-Verkehr (RNV) public traffic network using the new API."
-  },
-  {
-    "longname": "MMM-RNV",
-    "id": "jupadin/MMM-RNV",
-    "url": "https://github.com/jupadin/MMM-RNV",
-    "author": "jupadin",
-    "desc": "Departure Monitor of Rhein-Neckar-Verkehr (RNV) with new API"
   },
   {
     "longname": "MMM-RNV",
@@ -1660,9 +1688,9 @@
   },
   {
     "longname": "MMM-GoogleTTS",
-    "id": "eouia/MMM-GoogleTTS",
-    "url": "https://github.com/eouia/MMM-GoogleTTS",
-    "author": "eouia",
+    "id": "MMRIZE/MMM-GoogleTTS",
+    "url": "https://github.com/MMRIZE/MMM-GoogleTTS",
+    "author": "MMRIZE",
     "desc": "Text-to-Speech module for MagicMirror with Google Cloud TTS API. Give a voice to your Mirror."
   },
   {
@@ -2177,6 +2205,13 @@
     "desc": "2 hour Dutch rain forecast graph based on Buienradar"
   },
   {
+    "longname": "MMM-RainForecast",
+    "id": "jupadin/MMM-RainForecast",
+    "url": "https://github.com/jupadin/MMM-RainForecast",
+    "author": "jupadin",
+    "desc": "Show rain forecast weather maps based on OpenStreeMap. Highlight multiple points of interest with colored markers."
+  },
+  {
     "longname": "MMM-rain-forecast",
     "id": "spoturdeal/MMM-rain-forecast",
     "url": "https://github.com/spoturdeal/MMM-rain-forecast",
@@ -2450,6 +2485,13 @@
     "desc": "A module that displays the driver standings from the current Formula 1 season."
   },
   {
+    "longname": "MMM-F1",
+    "id": "jupadin/MMM-F1",
+    "url": "https://github.com/jupadin/MMM-F1",
+    "author": "jupadin",
+    "desc": "Displays the current driver standings of the current Formula 1 season."
+  },
+  {
     "longname": "MMM-Liquipedia-Dota2",
     "id": "buxxi/MMM-Liquipedia-Dota2",
     "url": "https://github.com/buxxi/MMM-Liquipedia-Dota2",
@@ -2497,6 +2539,13 @@
     "url": "https://github.com/fewieden/MMM-NHL",
     "author": "fewieden",
     "desc": "Display scores of National Hockey League."
+  },
+  {
+    "longname": "MMM-NBA",
+    "id": "jupadin/MMM-NBA",
+    "url": "https://github.com/jupadin/MMM-NBA",
+    "author": "jupadin",
+    "desc": "Display scores of National Basketball Association."
   },
   {
     "longname": "MMM-Olympia",
@@ -2562,11 +2611,25 @@
     "desc": "A module that displays your official USGA Ghin handicap."
   },
   {
+    "longname": "MMM-Pinfo",
+    "id": "SalekurPolas/MMM-Pinfo",
+    "url": "https://github.com/SalekurPolas/MMM-Pinfo",
+    "author": "Salekur Rahaman",
+    "desc": "Informational module to display mirror information like Raspberry Pi model, unique serial number, network information, IPv4, IPv6, MAC address, OS information, CPU information, and more."
+  },
+  {
     "longname": "MMM-Block",
     "id": "BKeyport/MMM-Block",
     "url": "https://github.com/BKeyport/MMM-Block",
     "author": "BKeyport",
     "desc": "Quick Module to easily move modules up or down for blank space"
+  },
+  {
+    "longname": "MMM-SweepClock",
+    "id": "mumblebaj/MMM-SweepClock",
+    "url": "https://github.com/mumblebaj/MMM-SweepClock",
+    "author": "mumblebaj",
+    "desc": "A Module to display a clasic Railway Clock"
   },
   {
     "longname": "next-train-transilien",
@@ -2784,6 +2847,13 @@
     "url": "https://github.com/awitwicki/MMM-BME280",
     "author": "awitwicki",
     "desc": "Display temperature, humidity, and pressure readings from BME280 I2C sensor"
+  },
+  {
+    "longname": "MMM-CalDAV",
+    "id": "MMRIZE/MMM-CalDAV",
+    "url": "https://github.com/MMRIZE/MMM-CalDAV",
+    "author": "MMRIZE",
+    "desc": "CalDav Parser to convert to iCal format."
   },
   {
     "longname": "MMM-CalendarExt",
@@ -3477,6 +3547,13 @@
     "url": "https://github.com/ottopaulsen/MMM-MQTT",
     "author": "ottopaulsen",
     "desc": "A Magic Mirror Module that subscribes topics from MQTT message queues, and displays the payload values in a table, with configurable labels."
+  },
+  {
+    "longname": "MMM-MQTT",
+    "id": "jupadin/MMM-MQTT",
+    "url": "https://github.com/jupadin/MMM-MQTT",
+    "author": "jupadin",
+    "desc": "Display received MQTT messages from a MQTT-Broker."
   },
   {
     "longname": "MMM-MQTTbind",
@@ -4438,6 +4515,13 @@
     "desc": "This module reads from a YouLess energy meter in your network to display realtime energy usage information."
   },
   {
+    "longname": "MMM-YouTubeWebView",
+    "id": "doctorfree/MMM-YouTubeWebView",
+    "url": "https://gitlab.com/doctorfree/MMM-YouTubeWebView",
+    "author": "doctorfree",
+    "desc": "Embed YouTube videos and playlists using the Electron webview tag rather than an iframe. May assist access to YouTube videos blocked in an iframe."
+  },
+  {
     "longname": "MMM-Zabbix-Alerts",
     "id": "spectroman/mmm-zabbix-alerts",
     "url": "https://github.com/spectroman/mmm-zabbix-alerts",
@@ -4583,6 +4667,13 @@
     "url": "https://github.com/Blastitt/DailyXKCD",
     "author": "Blastitt",
     "desc": "Displays the daily XKCD web comic."
+  },
+  {
+    "longname": "MMM-XKCD",
+    "id": "jupadin/MMM-XKCD",
+    "url": "https://github.com/jupadin/MMM-XKCD",
+    "author": "jupadin",
+    "desc": "Displays either the daily XKCD comic or a random XKCD comic."
   },
   {
     "longname": "German Word Clock",
@@ -5257,6 +5348,13 @@
     "desc": "Learn a (new foreign language) word every time you look in the mirror."
   },
   {
+    "longname": "MMM-LibrespotJava",
+    "id": "l3d00m/MMM-LibrespotJava",
+    "url": "https://github.com/l3d00m/MMM-LibrespotJava",
+    "author": "l3d00m",
+    "desc": "Display the song you are currently streaming on your [Librespot Java](https://github.com/librespot-org/librespot-java) Spotify Speaker"
+  },
+  {
     "longname": "MMM-lichess-daily",
     "id": "tonymorris/MMM-lichess-daily",
     "url": "https://github.com/tonymorris/MMM-lichess-daily",
@@ -5808,6 +5906,13 @@
     "url": "https://github.com/kolbyjack/MMM-Wallpaper",
     "author": "kolbyjack",
     "desc": "Rotates through wallpapers from Bing or Reddit."
+  },
+  {
+    "longname": "MMM-Wallpaper",
+    "id": "jupadin/MMM-Wallpaper",
+    "url": "https://github.com/jupadin/MMM-Wallpaper",
+    "author": "jupadin",
+    "desc": "Display images from Unsplash as wallpapers."
   },
   {
     "longname": "MMM-WordOfTheDay",

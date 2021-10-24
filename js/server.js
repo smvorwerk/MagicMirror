@@ -8,19 +8,14 @@ const express = require("express");
 const app = require("express")();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-
 const path = require("path");
 const ipfilter = require("express-ipfilter").IpFilter;
 const fs = require("fs");
 const { readdirSync } = require("fs");
-
 const helmet = require("helmet");
-
 var router = express.Router();
-
 const Log = require("logger");
 const Utils = require("./utils.js");
-
 var multer = require("multer");
 
 /**
@@ -100,25 +95,27 @@ function Server(config, callback) {
 	});
 
 	app.get("/profileFolderCreate", function (req, res) {
-		// res.render('./modules/MMM-Remote-Control/remote.ejs')
 		console.log("profileFolderCreate GET");
 	});
 
 	app.post("/profileFolderCreate", function (req, res) {
-		res.send("new profile Folder Create!");
-		let createFolderPath = "./modules/MMM-Face-Reco-DNN/dataset/" + req.body.profileName;
-		fs.mkdir(createFolderPath, function (err) {
+		createPath = "./modules/MMM-Face-Reco-DNN/dataset/" + req.body.profileName;
+		fs.mkdir(createPath, function (err) {
 			if (err) {
-				throw err;
+				if (err.code == "EEXIST") throw "up";
+				createPath = "./modules/MMM-Face-Reco-DNN/dataset/" + req.body.profileName;
 			}
-			console.log(req.body.profileName);
 			console.log("new profile Folder Create!");
 		});
+		console.log("FolderName:" + req.body.profileName);
+		console.log("new profile Folder Create!");
 	});
 
 	var storage = multer.diskStorage({
 		destination: function (req, file, cb) {
-			cb(null, "./modules/MMM-Face-Reco-DNN/dataset");
+			var imageStoragePath = createPath;
+			cb(null, imageStoragePath);
+			console.log("multerPath:" + createPath);
 		},
 		filename: function (req, file, cb) {
 			cb(null, file.originalname);
@@ -126,7 +123,7 @@ function Server(config, callback) {
 		fileFilter: function (req, file, callback) {
 			var ext = path.extname(file.originalname);
 			if (ext !== ".png" && ext !== ".jpg" && ext !== ".jpeg") {
-				return callback(new Error("PNG, JPG만 업로드하세요"));
+				return callback(new Error("You must upload Image files"));
 			}
 			callback(null, true);
 		}
@@ -135,11 +132,11 @@ function Server(config, callback) {
 	var upload = multer({ storage: storage });
 
 	app.get("/imageUpload", function (req, res) {
-		// res.render('./modules/MMM-Remote-Control/remote.ejs')
 		console.log("imageUpload GET");
 	});
 
 	app.post("/imageUpload", upload.array("profile", 10), function (req, res) {
+		console.log("Image Upload Complete!");
 		res.send("Image Upload Complete!");
 	});
 
