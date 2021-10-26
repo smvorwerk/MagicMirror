@@ -9,14 +9,11 @@ var config =
     '::ffff:127.0.0.1',
     '::1',
     '::ffff:192.168.35.1',
-    '::ffff:192.168.35.255',
-    '192.168.35.126',
-    '192.168.35.1',
-    '192.168.35.183',
-    '255.2555.255.255',
+    '::ffff:192.168.35.254',
+    '192.168.35.1/24',
+    '255.255.255.255',
     '0,0,0,0',
-    'x,x,x,x',
-    'X,X,X,X'
+    'x,x,x,x'
   ],
   language: 'kr',
   modules: [
@@ -157,8 +154,7 @@ var config =
           }
         }
       },
-      header: '',
-      classes: ''
+      header: ''
     },
     {
       module: 'clock',
@@ -171,12 +167,20 @@ var config =
     {
       module: 'compliments',
       position: 'lower_third',
-      config: {}
+      classes: 'unknown',
+      config: {
+        compliments: {
+          anytime: [
+            '사용자 등록을 완료하세요'
+          ]
+        }
+      }
     },
     {
       module: 'currentweather',
       position: 'top_left',
-      classes: 'always',
+      header: '',
+      classes: 'Billgates Robert',
       config: {
         location: 'Cheongju, KR',
         locationID: '1845604',
@@ -185,18 +189,19 @@ var config =
     },
     {
       module: 'MMM-AirQuality',
-      header: '대기오염',
       position: 'top_left',
-      classes: 'always',
+      header: '대기오염',
+      classes: 'Billgates',
       config: {
         location: 'cheongju'
       }
     },
     {
-      disabled: false,
       module: 'MMM-WeatherOrNot',
+      disabled: false,
       position: 'top_left',
-      classes: 'always',
+      header: '',
+      classes: 'Billgates Robert',
       config: {
         location: 'cheongju-si',
         locationCode: '36d64127d49',
@@ -226,13 +231,14 @@ var config =
     {
       module: 'calendar_monthly',
       position: 'top_center',
-      classes: 'Billgates',
+      header: '',
+      classes: 'Biden Robert',
       config: {}
     },
     {
       module: 'calendar',
       header: 'calendar_Detail',
-      classes: 'Billgates',
+      classes: 'Biden',
       position: 'top_center',
       config: {
         calendars: [
@@ -243,7 +249,6 @@ var config =
         ]
       }
     },
-    
     {
       module: 'MMM-Face-Reco-DNN',
       classes: 'always',
@@ -261,7 +266,7 @@ var config =
       module: 'MMM-NewsFeed',
       position: 'top_right',
       configDeepMerge: true,
-      classes: 'always',
+      classes: 'Billgates',
       config: {
         flux: [
           {
@@ -273,13 +278,35 @@ var config =
       }
     },
     {
+      module: 'MMM-cryptocurrency',
+      position: 'top_right',
+      classes: 'Biden',
+      config: {
+        apikey: '6bab2f3d-5658-4e19-802c-498573b55ecb',
+        currency: [
+          'ethereum',
+          'bitcoin',
+          'xrp'
+        ],
+        conversion: 'KRW',
+        headers: [
+          'change24h',
+          'change1h',
+          'change7d'
+        ],
+        displayType: 'logo',
+        fontSize: 'small',
+        showGraphs: true
+      }
+    },
+    {
       module: 'MMM-Remote-Control',
       position: 'bottom_right',
       classes: 'always',
       config: {
         showModuleApiMenu: true,
         secureEndpoints: true,
-        pm2ProcessName: 'MagicMirror',
+        pm2ProcessName: 'MagicMirror'
       }
     }
   ],

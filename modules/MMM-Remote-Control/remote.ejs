@@ -112,31 +112,11 @@
                             <span class="text">%%TRANSLATE:CONFIGURE_MENU_NAME%%</span>
                             <span class="fa fa-fw fa-angle-right" aria-hidden="true"></span>
                         </div>
-                        <!-- <div id="classes-button" class="menu-element hidden button main-menu">
-                            <span class="fa fa-fw fa-wrench" aria-hidden="true"></span>
-                            <span class="text">Classes Menu</span>
-                            <span class="fa fa-fw fa-angle-right" aria-hidden="true"></span>
-                        </div> -->
                         <div id="image-button" class="menu-element hidden button main-menu">
                             <span class="fa fa-fw fa-television" aria-hidden="true"></span>
                             <span class="text">Upload image</span>
                             <span class="fa fa-fw fa-angle-right" aria-hidden="true"></span>
                         </div>
-                        <!-- <div id="update-button" class="menu-element hidden button main-menu">
-                            <span class="fa fa-fw fa-toggle-up" aria-hidden="true"></span>
-                            <span class="text">%%TRANSLATE:UPDATE_MENU_NAME%%</span>
-                            <span class="fa fa-fw fa-angle-right" aria-hidden="true"></span>
-                        </div> -->
-                        <!-- <div id="alert-button" class="menu-element hidden button main-menu">
-                            <span class="fa fa-fw fa-envelope-o" aria-hidden="true"></span>
-                            <span class="text">%%TRANSLATE:ALERT_MENU_NAME%%</span>
-                            <span class="fa fa-fw fa-angle-right" aria-hidden="true"></span>
-                        </div> -->
-                        <!-- <div id="mirror-link-button" class="menu-element hidden button main-menu">
-                            <span class="fa fa-fw fa-external-link " aria-hidden="true"></span>
-                            <span class="text">%%TRANSLATE:VIEW_MIRROR%%</span>
-                        </div> -->
-
 
                         <!-- power menu -->
                         <div id="shut-down-button" class="menu-element hidden button power-menu">
@@ -151,32 +131,6 @@
                             <span class="fa fa-fw fa-recycle" aria-hidden="true"></span>
                             <span class="text">%%TRANSLATE:RESTARTMM%%</span>
                         </div>
-                        <!-- <div id="refresh-mm-button" class="menu-element hidden button power-menu">
-                            <span class="fa fa-fw fa-globe" aria-hidden="true"></span>
-                            <span class="text">%%TRANSLATE:REFRESHMM%%</span>
-                        </div>
-                        <div id="monitor-on-button" class="menu-element hidden button power-menu">
-                            <span class="stack fa-fw">
-                            <span class="fa fa-fw fa-television outer-label fa-stack-1x" aria-hidden="true"></span>
-                            <span class="fa fa-fw fa-check inner-monitor-label fa-stack-1x" aria-hidden="true"></span>
-                            </span>
-                            <span class="text">%%TRANSLATE:MONITORON%%</span>
-                        </div>
-                        <div id="monitor-off-button" class="menu-element hidden button power-menu">
-                            <span class="stack fa-fw">
-                            <span class="fa fa-fw fa-television outer-label fa-stack-1x" aria-hidden="true"></span>
-                            <span class="fa fa-fw fa-close inner-monitor-label fa-stack-1x" aria-hidden="true"></span>
-                            </span>
-                            <span class="text">%%TRANSLATE:MONITOROFF%%</span>
-                        </div>
-                        <div id="fullscreen-button" class="menu-element hidden button power-menu">
-                            <span class="fa fa-fw fa-arrows-alt" aria-hidden="true"></span>
-                            <span class="text">%%TRANSLATE:FULLSCREEN%%</span>
-                        </div>
-                        <div id="minimize-button" class="menu-element hidden button power-menu">
-                            <span class="fa fa-fw fa-window-minimize" aria-hidden="true"></span>
-                            <span class="text">%%TRANSLATE:MINIMIZE%%</span>
-                        </div> -->
                         <div id="devtools-button" class="menu-element hidden button power-menu">
                             <span class="fa fa-fw fa-terminal" aria-hidden="true"></span>
                             <span class="text">%%TRANSLATE:DEVTOOLS%%</span>
@@ -189,23 +143,31 @@
                             <button class="updateProfileList">Update</button> -->
 
                             <div>
-                            <p>Profile Folder Create</p>
+                            <p class="image-p">Profile Folder Create</p>
                             <form method="POST" action="/profileFolderCreate" >
-                                <input type="text" name="profileName" class="image-menu-500"><br>
+                                <input type="text" name="profileName" class="image-menu-500 image-input"><br>
                                 <button type="submit" class="button-6" role="button">Profile Folder Create OR Select</button>
                             </form>
                             </div>
-                            
+                            <br>
                             <div>
-                            <p>Profile Image Upload</p>
+                                <p class="image-p">Profile Represent Image Upload</p>
+                                <form method="POST" action="/imageRepresentUpload" enctype="multipart/form-data">
+                                    <input type="file" name="imageRepresentUpload" required class="image-menu-500 image-input"><br>
+                                    <button type="submit" class="button-6" role="button">Register Image</button>
+                                </form>
+                                </div>
+                                <br>
+                            <div>
+                            <p class="image-p">Profile Image Upload (Max 10)</p>
                             <form method="POST" action="/imageUpload" enctype="multipart/form-data" >
-                                <input type="file" name="profile" required multiple class="image-menu-500"><br>
+                                <input type="file" name="profile" required multiple class="image-menu-500 image-input"><br>
                                 <button type="submit" class="button-6" role="button">Upload Image</button>
                             </form>
                             </div>
-
+                            <br>
                             <div>
-                                <p>Encoding</p>
+                                <p class="image-p">Encoding</p>
                                 <form method="POST" action="/imageEncode" >
                                     <button type="submit" class="button-6" role="button">Image Encode</button>
                                 </form>
@@ -318,6 +280,7 @@
                     <!-- content is inserted here -->
                 </div>
             </div>
+            
             <div id="popup-container" class="popup">
                 <div id="close-popup">
                     <span class="fa fa-times-circle delete-button"></span>

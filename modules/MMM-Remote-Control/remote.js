@@ -1965,15 +1965,15 @@ var buttons = {
       }
     );
     wrapper.appendChild(panic);
-
-    var danger = self.createSymbolText(
-      "fa fa-warning",
-      self.translate("NO_RISK_NO_FUN"),
-      function () {
-        window.location.hash = "settings-menu";
-      }
-    );
-    wrapper.appendChild(danger);
+    window.location.hash = "settings-menu";
+    // var danger = self.createSymbolText(
+    //   "fa fa-warning",
+    //   self.translate("NO_RISK_NO_FUN"),
+    //   function () {
+    //     window.location.hash = "settings-menu";
+    //   }
+    // );
+    // wrapper.appendChild(danger);
 
     self.setStatus(false, false, wrapper);
   },

@@ -100,16 +100,17 @@ function Server(config, callback) {
 	});
 
 	app.post("/profileFolderCreate", function (req, res) {
+		profileImageName = req.body.profileName + ".jpg";
 		createPath = "./modules/MMM-Face-Reco-DNN/dataset/" + req.body.profileName;
 		fs.mkdir(createPath, function (err) {
 			if (err) {
-				if (err.code == "EEXIST") throw "up";
+				if (err.code == "EEXIST") throw "Same Folder Exist!";
 				createPath = "./modules/MMM-Face-Reco-DNN/dataset/" + req.body.profileName;
 			}
 			console.log("new profile Folder Create!");
 		});
 		console.log("FolderName:" + req.body.profileName);
-		console.log("new profile Folder Create!");
+		// console.log("new profile Folder Create!");
 	});
 
 	var storage = multer.diskStorage({
@@ -131,6 +132,34 @@ function Server(config, callback) {
 	});
 
 	var upload = multer({ storage: storage });
+
+	var storage2 = multer.diskStorage({
+		destination: function (req, file, cb) {
+			var imageStoragePath2 = "./modules/Face-Reco-Multi-Users/Users_img";
+			cb(null, imageStoragePath2);
+		},
+		filename: function (req, file, cb) {
+			cb(null, profileImageName);
+		},
+		fileFilter: function (req, file, callback) {
+			var ext = path.extname(file.originalname);
+			if (ext !== ".png" && ext !== ".jpg" && ext !== ".jpeg") {
+				return callback(new Error("You must upload Image files"));
+			}
+			callback(null, true);
+		}
+	});
+
+	var upload2 = multer({ storage: storage2 });
+
+	app.get("/imageRepresentUpload", function (req, res) {
+		console.log("imageRepresentUpload GET");
+	});
+
+	app.post("/imageRepresentUpload", upload2.single("imageRepresentUpload"), function (req, res) {
+		console.log("Image Represent Upload Complete!");
+		res.send("Image Represent Upload Complete!");
+	});
 
 	app.get("/imageUpload", function (req, res) {
 		console.log("imageUpload GET");
