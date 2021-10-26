@@ -14,7 +14,7 @@
 
 카메라와 OpenCV 라이브러리를 이용한 영상처리를 통해 안면인식 데이터로 개인의 이미지 정보를 각각 저장하고 저장된 인코딩된 데이터를 기반으로 사용자를 구분하여 특정 정보를 제공한다. 거울을 이용하는 사용자의 편리성 증대와 기존의 스마트 미러의 동일한 데이터를 제공하는 단점을 보완하는 것이 목표이다.
 
-## \***\*참여 인원 및 담당 영역\*\***
+## **참여 인원 및 담당 영역**
 
 #### **Team Leader**
 
@@ -60,7 +60,7 @@
 - Home<br>
   ![web1](https://user-images.githubusercontent.com/55140122/138879821-0427393f-dcd7-460d-9d72-32005826b52a.JPG)
   <br><br>
-- Image Upload Menu
+- Image Upload Menu<br>
   ![web2](https://user-images.githubusercontent.com/55140122/138879919-4156b564-81e3-46da-986c-7a334851ff85.JPG)
 
 ## **하드웨어 구성**
