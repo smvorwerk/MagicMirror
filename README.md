@@ -6,7 +6,7 @@
 
 단순하게 실물의 이미지를 투영하여 사용자 눈에 반사하는 기존의 일반 거울과 다르게 실제 투영된 이미지와 함께 사용자의 생활 패턴, 모션, 음성, 감정 인식하여 사용자에게 편의를 줄 수 있는 정보, 영상, 사운드를 제공할 수 있는 증강현실 기능이 결합된 거울을 스마트 미러라고 한다.
 
-## \***\*개발 동기\*\***
+## **개발 동기**
 
 급변하는 4차 산업혁명시대에 맞추어 정보를 쉽게 습득하며, 빠르게 변화함으로 인해 디바이스에 네트워크(인터넷)가 연결된 기능을 탑재한 새로운 제품들이 개발되고 있다. 사회뿐만 아니라 가정, 일상에서 필수품인 거울은 시대에 맞춰 증강현실, 가상현실을 이용한 다양한 제품들이 제작, 판매되고 있다. 기존의 스마트미러는 (스마트미러 개념 이전의)키오스크와 마찬가지로 특정 장소에서 특정 목적을 가지고 단순한 정보를 제공하여 정보가 한정적이라는 단점이 존재한다. 따라서 사용자 인식 후 사용자가 지정한 정보 제공 목적을 목표로 하여 개발을 시작하려고 한다.
 
@@ -84,28 +84,27 @@
 
 ## **Demo Video**
 
-#### 1. 스마트미러 실행, 얼굴인식 수행, 사용자별로 정보 출력
+(1,2: SmartPhone 촬영, 3,4,5:PC에서 VNC viewer로 통한 녹화)
 
-VNC뷰어에서 녹화
-([https://www.youtube.com/watch?v=qY_svAGYoL8](https://www.youtube.com/watch?v=qY_svAGYoL8))
-<br>핸드폰으로 녹화
-([https://youtu.be/xcVvi0jjvIo](https://youtu.be/xcVvi0jjvIo))
+#### 1. 스마트미러 실행, 얼굴인식 수행, 사용자별로 정보 출력, 사용자 등록, 등록한 사용자 출력할 정보 지정.
 
-#### 2. 카메라에 사용자 인식 수행 과정 (Detail)
+[https://youtu.be/c7A0egszpHU](https://youtu.be/c7A0egszpHU)
+
+#### 2. 구글 어시스턴트 호출 및 유튜브 영상 재생
+
+[https://youtu.be/1hUnuKBZuKU](https://youtu.be/1hUnuKBZuKU)
+
+#### 3. 카메라에 사용자 인식 수행 과정 (Detail)
 
 [https://youtu.be/I8D6xEGI30w](https://youtu.be/I8D6xEGI30w)
 
-#### 3. WEB에서 등록할 사용자 이미지 업로드 및 인코딩 수행
+#### 4. WEB에서 등록할 사용자 이미지 업로드 및 인코딩 수행
 
 [https://youtu.be/3kPNe5DLkME](https://youtu.be/3kPNe5DLkME)
 
-#### 4. WEB에서 사용자별로 출력할 정보(모듈) 지정 및 등록된 사용자 로그인시 정보 출력
+#### 5. WEB에서 사용자별로 출력할 정보(모듈) 지정 및 등록된 사용자 로그인시 정보 출력
 
 [https://youtu.be/ciZR28THez8](https://youtu.be/ciZR28THez8)
-
-#### 5. 구글 어시스턴트 호출 및 유튜브 영상 재생
-
-[https://youtu.be/qJcewWLfdBg](https://youtu.be/qJcewWLfdBg)
 
 ## **사용된 오픈소스 및 라이브러리**
 
